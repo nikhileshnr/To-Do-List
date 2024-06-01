@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body
+        {
+            background: url(./assets/neobruthalism.svg);
+            overflow: hidden;
+        }
+        .header
+        {
+            font-family: "Poppins";
+            display: flex;
+            justify-content: center;
+            height: 15vh;
+            font-size: 1.8rem;
+        }
+        .bkg
+        {
+            background-color: #60c0bf;
+            border: 1px solid black;
+            border-radius: 0.75em;
+            width: 90%;
+            max-width: 860px;
+            margin: 1.75em auto;
+            margin-bottom: 15px;
+            height: 75vh;
+            overflow: auto;
+        }
+        .select
+        {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            
+            height: 12vh;
+            
+            
+            /* align-items: center; */
+           
+            padding-top: 20px;
+        }
+        #list
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+        .task
+        {
+            display: flex;
+            justify-content: space-between;
+            border: 2px solid;
+            width:41vw;
+            height: 7vh;
+            border-radius: 8px;
+            padding: 7px;
+        }
+        input
+        {
+            height: 6vh;
+            width: 30vw;
+            border-radius: 5px;
+            border: 1px solid black;
+
+        }
+        #btn
+        {
+            width: 10vw;
+            height: 6vh;
+            border-radius: 5px;
+            border: 1px solid black;
+            background-color: #7fbc95;
+            color: rgb(0, 0, 0);
+            font-family:"Poppins";
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>To-Do List</h1>
+    </div>
+    <div class="bkg">
+    <div class="select">
+        <input type="text" id="itag">
+        <button id="btn">Add</button>
+    </div>
+    <div id="list">
+        <!-- <div class="task">
+            <div id="text">Abc</div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25px" viewBox="0 0 24 24" fill="currentColor"><path d="M17 6H22V8H20V21C20 21.5523 19.5523 22 19 22H5C4.44772 22 4 21.5523 4 21V8H2V6H7V3C7 2.44772 7.44772 2 8 2H16C16.5523 2 17 2.44772 17 3V6ZM18 8H6V20H18V8ZM9 11H11V17H9V11ZM13 11H15V17H13V11ZM9 4V6H15V4H9Z"></path></svg>
+
+        </div>
+        <div class="task">
+            <div id="text">Abc</div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25px" viewBox="0 0 24 24" fill="currentColor"><path d="M17 6H22V8H20V21C20 21.5523 19.5523 22 19 22H5C4.44772 22 4 21.5523 4 21V8H2V6H7V3C7 2.44772 7.44772 2 8 2H16C16.5523 2 17 2.44772 17 3V6ZM18 8H6V20H18V8ZM9 11H11V17H9V11ZM13 11H15V17H13V11ZM9 4V6H15V4H9Z"></path></svg> -->
+
+        </div></div>
+    <script src="./index.js"></script>
+
+</body>
+</html>
